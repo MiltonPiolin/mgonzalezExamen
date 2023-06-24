@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mgonzalezExamen.Resumen">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="Beige"/>
+                <Setter Property="TextColor" Value="Black"/>
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="16"/>
+                
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" TextColor="red" FontSize="16" HorizontalTextAlignment="End"/>
+            <Label Text="REGISTRO" HorizontalTextAlignment="Center" FontSize="24"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" HorizontalTextAlignment="Center" FontSize="16"  Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Apellido" HorizontalTextAlignment="Center" FontSize="16"  Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Edad" HorizontalTextAlignment="Center" FontSize="16"  Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Fecha" HorizontalTextAlignment="Center" FontSize="16"  Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Pais" HorizontalTextAlignment="Center" FontSize="16"  Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Ciudad" HorizontalTextAlignment="Center" FontSize="16"  Grid.Row="5" Grid.Column="0"/>
+                <Label Text="Monto Inicial" HorizontalTextAlignment="Center" FontSize="16"  Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Pago Mensual" HorizontalTextAlignment="Center" FontSize="16"  Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Pago Total" HorizontalTextAlignment="Center" FontSize="16" Grid.Row="8" Grid.Column="0"/>
+
+
+                <Label x:Name="lblNombre"   Grid.Row="0" Grid.Column="1"/>
+                <Label x:Name="lblApellido"   Grid.Row="1" Grid.Column="1"/>
+                <Label x:Name="lblEdad"   Grid.Row="2" Grid.Column="1"/>
+                <Label x:Name="lblFecha"   Grid.Row="3" Grid.Column="1"/>
+                <Label x:Name="lblPais" Grid.Row="4" Grid.Column="1"/>
+                <Label x:Name="lblCiudad" Grid.Row="5" Grid.Column="1"/>
+                <Label x:Name="lblMontoInicial"  Grid.Row="6" Grid.Column="1"/>
+                <Label x:Name="lblPagoMensual"   Grid.Row="7" Grid.Column="1"/>
+                <Label x:Name="lblPagoTotal" Grid.Row="8" Grid.Column="1"/>
+
+            </Grid>
+
+            <Button x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked"/>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
